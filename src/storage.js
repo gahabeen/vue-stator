@@ -63,7 +63,7 @@ export function registerStorage (store, storage) {
     if (Array.isArray(shelf)) {
       [provider, namespaces] = shelf
     } else {
-      ({ storage: provider, namespaces } = shelf)
+      { provider, namespaces } = shelf
     }
 
     provider = callIfFunction(provider)
